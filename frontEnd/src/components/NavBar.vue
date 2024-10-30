@@ -6,10 +6,18 @@
     </RouterLink>
     <nav class="nav-links">
       <RouterLink active-class="active-route" to="/">Home</RouterLink>
-      <RouterLink active-class="active-route" to="/services">Services</RouterLink>
-      <RouterLink active-class="active-route" to="/about-us">About Us</RouterLink>
-      <RouterLink active-class="active-route" to="/to-schedule">To Schedule</RouterLink>
-      <RouterLink active-class="active-route" to="/location">Location</RouterLink>
+      <RouterLink active-class="active-route" to="/services"
+        >Services</RouterLink
+      >
+      <RouterLink active-class="active-route" to="/about-us"
+        >About Us</RouterLink
+      >
+      <RouterLink active-class="active-route" to="/to-schedule"
+        >To Schedule</RouterLink
+      >
+      <RouterLink active-class="active-route" to="/location"
+        >Location</RouterLink
+      >
       <RouterLink active-class="active-route" to="/blog">Blog</RouterLink>
     </nav>
     <div class="button-container">
