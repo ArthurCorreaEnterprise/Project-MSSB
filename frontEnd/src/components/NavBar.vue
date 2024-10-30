@@ -1,26 +1,18 @@
 <template>
-  <div class="style-00">
-    <RouterLink to="/" class="style-01">
+  <div class="navbar-container">
+    <RouterLink to="/" class="logo-container">
       <img alt="Vue logo" class="logo" src="@/assets/logo.svg" />
       <h1>S<span>a</span>l<span>o</span>o<span>n</span></h1>
     </RouterLink>
-    <nav class="style-02">
+    <nav class="nav-links">
       <RouterLink active-class="active-route" to="/">Home</RouterLink>
-      <RouterLink active-class="active-route" to="/services"
-        >Services</RouterLink
-      >
-      <RouterLink active-class="active-route" to="/about-us"
-        >About Us</RouterLink
-      >
-      <RouterLink active-class="active-route" to="/to-schedule"
-        >To schedule</RouterLink
-      >
-      <RouterLink active-class="active-route" to="/location"
-        >Location</RouterLink
-      >
+      <RouterLink active-class="active-route" to="/services">Services</RouterLink>
+      <RouterLink active-class="active-route" to="/about-us">About Us</RouterLink>
+      <RouterLink active-class="active-route" to="/to-schedule">To Schedule</RouterLink>
+      <RouterLink active-class="active-route" to="/location">Location</RouterLink>
       <RouterLink active-class="active-route" to="/blog">Blog</RouterLink>
     </nav>
-    <div class="style-03">
+    <div class="button-container">
       <button class="model violet">En</button>
       <button class="model violet">Sign In</button>
       <button class="model violet">Sign Up</button>
@@ -33,25 +25,25 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <style scoped>
-.style-00 {
-  @apply border flex justify-between items-center px-6;
+.navbar-container {
+  @apply flex justify-between items-center px-6;
 }
 
-.style-01 {
+.logo-container {
   @apply flex items-end gap-2 py-2;
 }
 
-.style-02 {
-  @apply flex justify-center items-center gap-2 w-2/4 font-semibold capitalize;
+.nav-links {
+  @apply flex justify-center items-center gap-4 w-2/4 font-semibold capitalize;
   @apply text-violet-400;
 }
 
-.style-03 {
+.button-container {
   @apply flex justify-end items-center gap-2;
 }
 
 button.model {
-  @apply border px-6 py-2 rounded-md font-semibold capitalize text-sm;
+  @apply border px-6 py-2 rounded-md font-bold capitalize text-sm;
 }
 
 button.violet {
@@ -64,8 +56,7 @@ button.violet {
 }
 
 .active-route {
-  @apply underline underline-offset-4;
-  @apply text-violet-600;
+  @apply text-violet-800;
 }
 
 h1 {
